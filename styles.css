@@ -1,0 +1,154 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Page layout */
+header {
+    background-color: #3bb3e0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-right: 10px; /* Adjust the margin between the container and the logo */
+}
+
+header h1, header p {
+    margin: 0; /* Reset margin */
+}
+
+header img {
+    max-width: 10%;
+    height: auto;
+}
+
+nav {
+    background-color: #70c2bd;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    position: relative;
+}
+
+.background-container {
+    position: relative;
+    width: 100%; /* Set the width to 100% */
+    height: 50vh; /* Set the height to 50% of the viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%; /* Set the height to cover the entire container */
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: center; /* Center the image */
+    opacity: 0.7;
+}
+
+.welcome-heading { /* Unique class selector */
+    position: absolute;
+    bottom: 0; /* Align the banner to the bottom of the container */
+    left: 0; /* Align the banner to the left of the container */
+    width: 100%; /* Stretch the banner to the full width of the container */
+    background-color: #3bb4e0ae;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+/* CSS for Content after the Banner */
+.content-after-banner {
+    padding-top: 10px; /* Adjust as needed to ensure content does not overlap with banner */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.space {
+    height: 20px; /* Adjust the height as needed */
+}
+
+.indented-list {
+    padding-left: 40px; /* Adjust the padding-left value as needed */
+}
+
+/* Footer */
+footer {
+    background-color: #3bb3e0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Links */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Form styles */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+/* CSS for Contact Form */
+.contact-form {
+    background-color: #eee;
+    padding: 20px;
+    max-width: 100%; /* Set the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Adjust form input and textarea widths if necessary */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 98%; /* Make the form inputs and textarea span the width of the form */
+    padding: 10px; /* Add padding to the inputs */
+    margin-bottom: 10px; /* Add spacing between inputs */
+}
+
+.contact-form textarea {
+    height: 100px; /* Set the height of the textarea */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
